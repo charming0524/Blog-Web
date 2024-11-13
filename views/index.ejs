@@ -1,0 +1,19 @@
+<%- include('partials/header.ejs') %>
+
+  <div class="container mt-5">
+    <h2 class="mb-3">Write a New Anonymous Blog</h2>
+    <form action="/add-post" method="POST">
+      <div class="form-group">
+        <label for="title"></label>
+        <input type="text" class="form-control" id="title" placeholder="title" name="title" required>
+      </div>
+      <div class="form-group mt-3">
+        <label for="description"></label>
+        <textarea class="form-control" id="description" placeholder="description" name="description" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary mt-3">Add Post</button>
+    </form>
+  </div>
+
+
+<%- include('partials/footer.ejs') %>
